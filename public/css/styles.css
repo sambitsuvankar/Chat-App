@@ -46,6 +46,13 @@ button {
     font-size: 16px;
     transition: background .3s ease;
 }
+@media screen and (max-width : 512px) {
+    button{
+        padding: 8px;
+        border-radius: 5px;
+    }
+}
+
 
 button:hover {
     background: #6b47b8;
@@ -141,11 +148,23 @@ button:disabled {
     margin-top: 16px;
     padding: 24px;
 }
+@media screen and (max-width: 512px){
+    .compose{
+        padding: 10px;
+        height: 60px;
+    }
+   
+}
 
 .compose form {
     display: flex;
     flex-grow: 1;
     margin-right: 16px;
+}
+@media screen and (max-width : 512px) {
+    .compose form{
+        margin-right: 6px;
+    }
 }
 
 .compose input {
@@ -158,6 +177,14 @@ button:disabled {
 
 .compose button {
     font-size: 14px;
+}
+@media screen and (max-width : 512px) {
+    .compose button{
+        font-size: 8px;
+    }
+    .compose input{
+        border-radius: 5px;
+    }
 }
 
 /* Chat Sidebar Styles */
